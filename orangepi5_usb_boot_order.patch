@@ -1,0 +1,17 @@
+diff --git a/include/configs/rockchip-common.h b/include/configs/rockchip-common.h
+index 823d9e811..7ba854548 100644
+--- a/include/configs/rockchip-common.h
++++ b/include/configs/rockchip-common.h
+@@ -114,11 +114,11 @@
+ 
+ #define BOOT_TARGET_DEVICES(func) \
+ 	BOOT_TARGET_MMC(func) \
++       BOOT_TARGET_USB(func) \
+ 	BOOT_TARGET_NVME(func) \
+ 	BOOT_TARGET_SCSI(func) \
+ 	BOOT_TARGET_MTD(func) \
+ 	BOOT_TARGET_RKNAND(func) \
+-	BOOT_TARGET_USB(func) \
+ 	BOOT_TARGET_PXE(func) \
+ 	BOOT_TARGET_DHCP(func)
+ 

@@ -1,0 +1,56 @@
+diff --git a/config/desktop/focal/environments/mate/debian/postinst b/config/desktop/focal/environments/mate/debian/postinst
+index aff07abb6..165b1e218 100755
+--- a/config/desktop/focal/environments/mate/debian/postinst
++++ b/config/desktop/focal/environments/mate/debian/postinst
+@@ -15,10 +15,10 @@ install -Dv /dev/null $profile
+ # deconf dump org/nemo/ > nemo_backup
+ # deconf dump org/mate/ > cinnamon_desktop_backup
+ 
+-echo "[org/nemo/list-view]
++echo "[org/caja/list-view]
+ default-visible-columns=['name', 'size', 'type', 'date_modified', 'owner', 'permissions']
+ 
+-[org/nemo/preferences]
++[org/caja/preferences]
+ quick-renames-with-pause-in-between=true
+ show-advanced-permissions=true
+ show-compact-view-icon-toolbar=false
+@@ -31,7 +31,7 @@ show-list-view-icon-toolbar=false
+ show-new-folder-icon-toolbar=true
+ show-open-in-terminal-toolbar=true
+ 
+-[org/nemo/window-state]
++[org/caja/window-state]
+ geometry='800x550+550+244'
+ maximized=false
+ sidebar-bookmark-breakpoint=5
+@@ -59,7 +59,7 @@ secondary-click-time=1.2
+ 
+ [org/mate/desktop/background]
+ picture-options='zoom'
+-picture-uri='file:///usr/share/backgrounds/armbian/armbian03-Dre0x-Minum-dark-3840x2160.jpg'
++picture-filename='/usr/share/backgrounds/armbian/armbian03-Dre0x-Minum-dark-3840x2160.jpg'
+ primary-color='#456789'
+ secondary-color='#FFFFFF'
+ 
+@@ -116,13 +116,13 @@ sleep-inactive-battery-timeout=0
+ buttons-have-icons=true
+ menus-have-icons=true
+ 
+-[org/mate/sounds]
+-login-enabled=false
+-logout-enabled=false
+-plug-enabled=false
+-switch-enabled=false
+-tile-enabled=false
+-unplug-enabled=false" >> $keys
++#[org/mate/sounds]
++#login-enabled=false
++#logout-enabled=false
++#plug-enabled=false
++#switch-enabled=false
++#tile-enabled=false
++#unplug-enabled=false" >> $keys
+ 
+ echo "user-db:user
+ system-db:local" >> $profile
