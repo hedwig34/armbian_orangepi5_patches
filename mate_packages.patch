@@ -1,8 +1,8 @@
 diff --git a/config/desktop/jammy/environments/mate/config_base/packages b/config/desktop/jammy/environments/mate/config_base/packages
-index 0227724a4..70a9a28e3 100644
+index 0227724a4..a5459806d 100644
 --- a/config/desktop/jammy/environments/mate/config_base/packages
 +++ b/config/desktop/jammy/environments/mate/config_base/packages
-@@ -1,5 +1,20 @@
+@@ -1,5 +1,19 @@
 +adcli
 +alsa-base
 +alsa-utils
@@ -13,7 +13,6 @@ index 0227724a4..70a9a28e3 100644
 +atril
 +ayatana-indicator-application
 +ayatana-indicator-datetime
-+ayatana-indicator-messages
 +ayatana-indicator-notifications
 +ayatana-indicator-printers
 +ayatana-indicator-session
@@ -23,7 +22,7 @@ index 0227724a4..70a9a28e3 100644
  blueman
  bluez
  bluez-cups
-@@ -8,6 +23,14 @@ brltty
+@@ -8,6 +22,14 @@ brltty
  brltty-x11
  cifs-utils
  colord
@@ -38,7 +37,7 @@ index 0227724a4..70a9a28e3 100644
  cups
  cups-bsd
  cups-client
-@@ -35,12 +58,14 @@ fonts-stix
+@@ -35,12 +57,14 @@ fonts-stix
  fonts-symbola
  fonts-ubuntu-console
  foomatic-db-compressed-ppds
@@ -53,7 +52,7 @@ index 0227724a4..70a9a28e3 100644
  gnome-user-docs-de
  gnome-user-docs-es
  gnome-user-docs-it
-@@ -48,15 +73,15 @@ gnome-user-docs-pt
+@@ -48,15 +72,15 @@ gnome-user-docs-pt
  gnome-user-docs-ru
  gnome-user-docs-sl
  gnome-system-monitor
@@ -72,7 +71,7 @@ index 0227724a4..70a9a28e3 100644
  inputattach
  inxi
  kerneloops
-@@ -69,8 +94,13 @@ language-pack-gnome-it
+@@ -69,8 +93,13 @@ language-pack-gnome-it
  language-pack-gnome-pt
  language-pack-gnome-ru
  language-pack-gnome-sl
@@ -86,7 +85,7 @@ index 0227724a4..70a9a28e3 100644
  libcvc0
  libfont-afm-perl
  libfontconfig1
-@@ -80,9 +110,11 @@ libgail-common
+@@ -80,9 +109,11 @@ libgail-common
  libgl1-mesa-dri
  libgsettings-qt1
  libgtk2.0-bin
@@ -98,7 +97,7 @@ index 0227724a4..70a9a28e3 100644
  libu2f-udev
  libwmf0.2-7-gtk
  libxapp1
-@@ -90,6 +122,7 @@ libxcursor1
+@@ -90,6 +121,7 @@ libxcursor1
  lightdm
  lightdm-settings
  lxtask
@@ -106,7 +105,7 @@ index 0227724a4..70a9a28e3 100644
  mate-accessibility-profiles
  mate-applet-appmenu
  mate-applet-brisk-menu
-@@ -152,6 +185,7 @@ mate-window-menu-applet
+@@ -152,6 +184,7 @@ mate-window-menu-applet
  mate-window-title-applet
  mesa-utils
  mousepad
@@ -114,7 +113,7 @@ index 0227724a4..70a9a28e3 100644
  mousetweaks
  network-manager-config-connectivity-ubuntu
  network-manager-openvpn
-@@ -171,6 +205,7 @@ printer-driver-all
+@@ -171,6 +204,7 @@ printer-driver-all
  profile-sync-daemon
  pulseaudio-module-bluetooth
  redshift
@@ -122,7 +121,7 @@ index 0227724a4..70a9a28e3 100644
  samba
  slick-greeter
  smbclient
-@@ -185,6 +220,7 @@ tracker-miner-fs
+@@ -185,6 +219,7 @@ tracker-miner-fs
  tree
  ubuntu-drivers-common
  update-inetd
@@ -130,7 +129,7 @@ index 0227724a4..70a9a28e3 100644
  update-manager
  update-manager-core
  update-notifier
-@@ -195,6 +231,8 @@ wbrazilian
+@@ -195,6 +230,8 @@ wbrazilian
  wbritish
  wfrench
  witalian
@@ -139,7 +138,7 @@ index 0227724a4..70a9a28e3 100644
  wportuguese
  wspanish
  wswiss
-@@ -209,10 +247,13 @@ xapps-common
+@@ -209,10 +246,13 @@ xapps-common
  xarchiver
  xdg-dbus-proxy
  xdg-desktop-portal
@@ -153,7 +152,7 @@ index 0227724a4..70a9a28e3 100644
  xorg-docs-core
  xscreensaver
  xsensors
-@@ -224,3 +265,5 @@ yelp
+@@ -224,3 +264,5 @@ yelp
  yelp-xsl
  zenity
  zenity-common
