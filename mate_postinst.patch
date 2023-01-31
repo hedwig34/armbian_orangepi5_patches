@@ -1,5 +1,5 @@
 diff --git a/config/desktop/focal/environments/mate/debian/postinst b/config/desktop/focal/environments/mate/debian/postinst
-index aff07abb6..165b1e218 100755
+index aff07abb6..09e3d21b5 100755
 --- a/config/desktop/focal/environments/mate/debian/postinst
 +++ b/config/desktop/focal/environments/mate/debian/postinst
 @@ -15,10 +15,10 @@ install -Dv /dev/null $profile
@@ -33,24 +33,24 @@ index aff07abb6..165b1e218 100755
  primary-color='#456789'
  secondary-color='#FFFFFF'
  
-@@ -116,13 +116,13 @@ sleep-inactive-battery-timeout=0
- buttons-have-icons=true
- menus-have-icons=true
+@@ -80,6 +80,9 @@ toolkit-accessibility=false
+ [org/mate/desktop/media-handling]
+ autorun-never=false
  
--[org/mate/sounds]
--login-enabled=false
--logout-enabled=false
--plug-enabled=false
--switch-enabled=false
--tile-enabled=false
--unplug-enabled=false" >> $keys
-+#[org/mate/sounds]
-+#login-enabled=false
-+#logout-enabled=false
-+#plug-enabled=false
-+#switch-enabled=false
-+#tile-enabled=false
-+#unplug-enabled=false" >> $keys
++[org/mate/desktop/peripherals/mouse]
++cursor-theme='default'
++
+ [org/mate/desktop/screensaver]
+ picture-options='zoom'
+ picture-uri='file:///usr/share/backgrounds/armbian-lightdm/armbian03-Dre0x-Minum-dark-3840x2160'
+@@ -90,6 +93,10 @@ secondary-color='#FFFFFF'
+ num-workspaces=2
+ theme='Numix'
  
- echo "user-db:user
- system-db:local" >> $profile
++[org/mate/marco/general]
++num-workspaces=2
++theme='Numix'
++
+ [org/mate/settings-daemon/peripherals/touchpad]
+ disable-while-typing=true
+ horiz-scroll-enabled=false
