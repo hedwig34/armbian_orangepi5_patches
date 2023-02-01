@@ -1,5 +1,5 @@
 diff --git a/config/desktop/jammy/environments/mate/config_base/packages b/config/desktop/jammy/environments/mate/config_base/packages
-index 0227724a4..94b8c39f2 100644
+index 0227724a4..9f6718fe5 100644
 --- a/config/desktop/jammy/environments/mate/config_base/packages
 +++ b/config/desktop/jammy/environments/mate/config_base/packages
 @@ -1,5 +1,19 @@
@@ -152,3 +152,10 @@ index 0227724a4..94b8c39f2 100644
  xorg-docs-core
  xscreensaver
  xsensors
+@@ -224,3 +264,6 @@ yelp
+ yelp-xsl
+ zenity
+ zenity-common
++plank
++gnome-menus
++pluma
